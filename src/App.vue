@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, delectus?</p>
+    <HeroComponent/>
+    <ProjectsComponent/>
   </div>
 </template>
 
 <script>
+import HeroComponent from '@/components/HeroComponent.vue';
+import ProjectsComponent from '@/components/ProjectsComponent.vue';
+
 export default {
   name: 'App',
+  components: {
+    HeroComponent,
+    ProjectsComponent,
+  },
 };
 </script>
 
