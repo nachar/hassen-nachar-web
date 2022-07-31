@@ -4,13 +4,32 @@ export default {
     return {
       projects: [
         {
+          name: 'Dando by CFG',
+          type: 'web',
+          key: 'dando',
+          url: 'https://www.dando.co/es',
+          company: 'Modyo',
+        },
+        {
+          name: 'PWA - Cinemark',
+          type: 'pwa',
+          key: 'pwa-cinemark',
+          url: null,
+          company: 'Modyo',
+        },
+        {
+          name: 'BCI Miami',
+          type: 'web',
+          key: 'bci-miami',
+          url: null,
+          company: 'Modyo',
+        },
+        {
           name: 'Superdigital',
           type: 'web',
           key: 'superdigital',
           url: 'https://www.superdigital.cl/',
           company: 'Modyo',
-          img: 'superdigital.svg',
-          size: 'small',
         },
         {
           name: 'Consorcio',
@@ -18,8 +37,6 @@ export default {
           key: 'consorcio',
           url: 'https://web.consorcio.cl/home',
           company: 'Modyo',
-          img: 'consorcio.svg',
-          size: 'medium',
         },
         {
           name: 'Copec',
@@ -27,8 +44,6 @@ export default {
           key: 'copec',
           url: 'https://ww2.copec.cl/',
           company: 'Modyo',
-          img: 'copec.svg',
-          size: 'medium',
         },
         {
           name: 'Santander',
@@ -36,8 +51,6 @@ export default {
           key: 'santander',
           url: 'https://banco.santander.cl/personas',
           company: 'Modyo',
-          img: 'santander.png',
-          size: 'medium',
         },
         {
           name: 'Vías Chile',
@@ -54,8 +67,6 @@ export default {
           key: 'vias-chile-api',
           url: 'https://obras.viaschile.cl/inicio',
           company: 'DevLab',
-          img: 'vias-chile.png',
-          size: 'small',
         },
         {
           name: 'Pago Click',
@@ -63,8 +74,6 @@ export default {
           key: 'pago-click',
           url: null,
           company: 'Modyo',
-          img: 'pago-click.png',
-          size: 'small',
         },
         {
           name: 'Cinemark Chile',
@@ -72,8 +81,6 @@ export default {
           key: 'app-cinemark-chile',
           url: 'https://apps.apple.com/cl/app/cinemark-chile/id1401507945',
           company: 'Modyo',
-          img: 'cinemark-app.png',
-          size: 'small',
         },
         {
           name: 'Cinemark Chile',
@@ -81,8 +88,6 @@ export default {
           key: 'cinemark-chile',
           url: 'https://www.cinemark.cl/',
           company: 'Modyo',
-          img: 'cinemark.png',
-          size: 'large',
         },
         {
           name: 'Cinemark Paraguay',
@@ -90,8 +95,6 @@ export default {
           key: 'cinemark-paraguay',
           url: 'https://www.cinemark.com.py/',
           company: 'Modyo',
-          img: 'cinemark.png',
-          size: 'large',
         },
         {
           name: 'Cinemark Bolivia',
@@ -99,8 +102,6 @@ export default {
           key: 'cinemark-bolivia',
           url: 'https://www.cinemark.com.bo/',
           company: 'Modyo',
-          img: 'cinemark.png',
-          size: 'large',
         },
         {
           name: 'Cinemark Perú',
@@ -108,8 +109,6 @@ export default {
           key: 'cinemark-peru',
           url: 'https://www.cinemark-peru.com/',
           company: 'Modyo',
-          img: 'cinemark.png',
-          size: 'large',
         },
         {
           name: 'Cinemark Colombia',
@@ -117,8 +116,6 @@ export default {
           key: 'cinemark-colombia',
           url: 'https://www.cinemark.com.co/',
           company: 'Modyo',
-          img: 'cinemark.png',
-          size: 'large',
         },
         {
           name: 'BCI Personas',
@@ -126,8 +123,6 @@ export default {
           key: 'bci-personas',
           url: 'https://www.bci.cl/personas',
           company: 'Modyo',
-          img: 'bci.png',
-          size: 'small',
         },
         {
           name: 'Sencillito',
@@ -135,8 +130,6 @@ export default {
           key: 'sencillito',
           url: 'https://www.sencillito.com/',
           company: 'Modyo',
-          img: 'sencillito.png',
-          size: 'medium',
         },
         {
           name: 'Cocha',
@@ -144,8 +137,6 @@ export default {
           key: 'cocha',
           url: 'https://www.cocha.com/',
           company: 'Modyo',
-          img: 'cocha.png',
-          size: 'medium',
         },
         {
           name: 'Mundo Copec',
@@ -153,8 +144,6 @@ export default {
           key: 'app-mundo-copec',
           url: 'https://ww2.copec.cl/informate/posts/descargue-la-app-mundo-copec',
           company: 'Techmobile',
-          img: 'mundo-copec.png',
-          size: 'small',
         },
         {
           name: 'Tribuna Centenario',
@@ -162,8 +151,6 @@ export default {
           key: 'app-tribuna-centenario',
           url: 'https://edgares.com/tribuna-centenario',
           company: 'Techmobile',
-          img: 'tribuna-centenario.png',
-          size: 'small',
         },
         {
           name: 'Bioscell',
@@ -171,8 +158,6 @@ export default {
           key: 'bioscell',
           url: 'https://bioscell.cl/',
           company: 'Techmobile',
-          img: 'bioscell.png',
-          size: 'medium',
         },
         {
           name: 'Marina Golf Rapel',
@@ -180,8 +165,6 @@ export default {
           key: 'marina-golf-rapel',
           url: 'https://marinagolfrapel.cl/',
           company: 'Techmobile',
-          img: 'marina-golf.png',
-          size: 'medium',
         },
         {
           name: 'IMS',
@@ -189,8 +172,6 @@ export default {
           key: 'app-ims-app',
           url: 'http://app.industrialms.cl/',
           company: 'DevLab',
-          img: 'ims.png',
-          size: 'small',
         },
         {
           name: 'IMS',
@@ -198,8 +179,6 @@ export default {
           key: 'app-ims-web',
           url: 'https://www.industrialms.cl/',
           company: 'DevLab',
-          img: 'ims.png',
-          size: 'small',
         },
         {
           name: 'IMS',
@@ -207,8 +186,6 @@ export default {
           key: 'app-ims-api',
           url: 'https://www.industrialms.cl/',
           company: 'DevLab',
-          img: 'ims.png',
-          size: 'small',
         },
         {
           name: 'Aygcamp',
@@ -216,8 +193,6 @@ export default {
           key: 'app-aygcamp-api',
           url: null,
           company: 'DevLab',
-          img: 'ayg.png',
-          size: 'small',
         },
         {
           name: 'Aygcamp',
@@ -225,8 +200,6 @@ export default {
           key: 'app-aygcamp-app',
           url: null,
           company: 'DevLab',
-          img: 'ayg.png',
-          size: 'small',
         },
       ],
     };

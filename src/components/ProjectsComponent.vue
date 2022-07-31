@@ -1,10 +1,10 @@
 <template>
   <LayoutComponent :title="$t('projects_title')" :description="$t('projects_description')">
-    <ul class="projects list-unstyled">
+    <ul class="projects list-unstyled text-center">
       <li v-for="project in projects" :key="project.key"
           class="projects__item d-inline-block list-unstyled p-1">
         <a :href="project.url" target="_blank"
-           rel="noopener noreferrer" class="project text-decoration-none d-block text-center">
+           rel="noopener noreferrer" class="project text-decoration-none d-block">
           <p class="project__name m-0">{{ project.name }}</p>
           <p class="project__type m-0">{{ project.type }} -
             <span class="project__type__company">{{ project.company }}</span>
@@ -24,12 +24,6 @@ export default {
   mixins: [MixinProjects],
   components: {
     LayoutComponent,
-  },
-  methods: {
-    getLogo(project) {
-      // eslint-disable-next-line import/no-dynamic-require,global-require
-      return require(`../assets/logos/${project.img}`);
-    },
   },
 };
 </script>
