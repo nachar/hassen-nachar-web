@@ -2,9 +2,11 @@
   <section class="layout app-hr min-vh-100 d-flex align-items-center py-4">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-5">
-          <h3>{{ title }}</h3>
-          <h4 class="mb-4 mb-lg-0 font-weight-normal">{{ description }}</h4>
+        <div class="col-12 col-lg-5 d-lg-flex align-items-lg-center">
+          <div>
+            <h3>{{ title }}</h3>
+            <h4 class="mb-4 mb-lg-0 font-weight-normal">{{ description }}</h4>
+          </div>
         </div>
 
         <div class="col-12 col-lg-7">

@@ -1,10 +1,14 @@
 @import "~bootstrap";
 @import "variables";
 
-#app {
+.app {
   font-family: 'Saira', sans-serif;
   color: $color-black;
   font-size: 1rem;
+}
+
+.app-box-border {
+  border: 1px solid $color-gray;
 }
 
 .app-hr {
