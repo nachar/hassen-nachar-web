@@ -1,5 +1,8 @@
 <template>
-  <LayoutComponent :title="$t('projects_title')" :description="$t('projects_description')">
+  <LayoutComponent
+    :title="$t('projects_title')"
+    :description="$t('projects_description')"
+    :id-element="'code-projects-component'">
     <ul class="projects list-unstyled text-center">
       <li v-for="project in projects"
           :key="project.key"

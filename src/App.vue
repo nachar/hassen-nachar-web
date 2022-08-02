@@ -5,6 +5,7 @@
     <JobsComponent/>
     <RepositoriesComponent/>
     <SocialComponent/>
+    <DisplayCodeComponent/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import ProjectsComponent from '@/components/ProjectsComponent.vue';
 import JobsComponent from '@/components/JobsComponent.vue';
 import RepositoriesComponent from '@/components/RepositoriesComponent.vue';
 import SocialComponent from '@/components/SocialComponent.vue';
+import DisplayCodeComponent from '@/components/DisplayCodeComponent.vue';
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     JobsComponent,
     RepositoriesComponent,
     SocialComponent,
+    DisplayCodeComponent,
   },
 };
 </script>

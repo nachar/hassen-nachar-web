@@ -1,5 +1,5 @@
 <template>
-  <section class="layout app-hr min-vh-100 d-flex align-items-center py-4">
+  <section class="layout app-hr min-vh-100 d-flex align-items-center py-4 position-relative">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-5 d-lg-flex align-items-lg-center">
@@ -14,12 +14,18 @@
         </div>
       </div>
     </div>
+    <ShowCodeComponent :id-element="idElement"/>
   </section>
 </template>
 
 <script>
+import ShowCodeComponent from '@/components/ShowCodeComponent.vue';
+
 export default {
   name: 'LayoutComponent',
+  components: {
+    ShowCodeComponent,
+  },
   props: {
     title: {
       type: String,
@@ -28,6 +34,10 @@ export default {
     description: {
       type: String,
       required: true,
+    },
+    idElement: {
+      type: String,
+      require: true,
     },
   },
 };

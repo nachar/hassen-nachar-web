@@ -1,5 +1,8 @@
 <template>
-  <LayoutComponent :title="$t('repositories_title')" :description="$t('repositories_description')">
+  <LayoutComponent
+    :title="$t('repositories_title')"
+    :description="$t('repositories_description')"
+    :id-element="'code-repositories-component'">
     <ul class="list-unstyled">
       <li v-for="repository in repositories"
           :key="repository.key"

@@ -1,5 +1,8 @@
 <template>
-  <LayoutComponent :title="$t('jobs_title')" :description="$t('jobs_description')">
+  <LayoutComponent
+    :title="$t('jobs_title')"
+    :description="$t('jobs_description')"
+    :id-element="'code-jobs-component'">
     <ul class="list-unstyled">
       <li v-for="job in jobs" :key="job.key" class="job p-1 float-left">
         <a :href="job.url"
