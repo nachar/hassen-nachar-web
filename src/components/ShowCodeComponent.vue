@@ -2,7 +2,7 @@
   <button @click="showCode()"
           class="component-code position-absolute d-flex align-items-center border-0 p-2">
     <span class="material-symbols-outlined mr-2">arrow_back</span>
-    Component Code
+    {{ $t('component_code') }}
   </button>
 </template>
 

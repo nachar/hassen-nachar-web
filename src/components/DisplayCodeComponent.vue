@@ -4,8 +4,9 @@
        v-on:click.self="toggleModal()"
        @keyPress="toggleModalDefault()">
     <div class="display-code__box w-100 h-100 position-absolute">
-      <div class="display-code__box__head text-right">
-        <button @click="toggleModal()" class="close-btn border-0 bg-transparent">
+      <div class="display-code__box__head d-flex align-items-center pl-2">
+        <span>{{ componentName(selectedCodeItem) }}</span>
+        <button @click="toggleModal()" class="close-btn border-0 bg-transparent ml-auto">
           <span class="close-btn__icon material-symbols-outlined">close</span>
         </button>
       </div>
@@ -15,7 +16,7 @@
 </template>
 
 <script>
-import { mapMutations, mapState } from 'vuex';
+import { mapGetters, mapMutations, mapState } from 'vuex';
 
 export default {
   name: 'DisplayCodeComponent',
@@ -26,6 +27,7 @@ export default {
   },
   computed: {
     ...mapState(['activeCode', 'selectedCodeItem']),
+    ...mapGetters(['componentName']),
   },
   watch: {
     activeCode(val) {
@@ -44,7 +46,7 @@ export default {
   },
   methods: {
     ...mapMutations(['TOGGLE_CODE']),
-    toggleModalDefault() { console.log('toggleModalDefault'); },
+    toggleModalDefault() {},
     toggleModal() {
       this.TOGGLE_CODE();
     },
@@ -71,6 +73,7 @@ export default {
 
     &__head {
       border-bottom: 1px solid $color-white;
+      color: white;
     }
   }
 
