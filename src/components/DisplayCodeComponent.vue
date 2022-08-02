@@ -36,6 +36,9 @@ export default {
           htmlContainer.removeChild(htmlContainer.children[0]);
         }
         htmlContainer.appendChild(this.currentHtml);
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'initial';
       }
     },
   },
