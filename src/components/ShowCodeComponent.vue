@@ -36,7 +36,7 @@ export default {
   background-color: $color-black;
   color: $color-white;
 
-  @media (min-width: 992px){
+  @media (min-width: 1460px){
     bottom: inherit;
   }
 }
