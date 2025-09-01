@@ -1,35 +1,11 @@
+<script setup></script>
+
 <template>
-  <div id="app" class="app">
-    <HeroComponent/>
-    <ProjectsComponent/>
-    <JobsComponent/>
-    <RepositoriesComponent/>
-    <SocialComponent/>
-    <DisplayCodeComponent/>
-  </div>
+  <h1>You did it!</h1>
+  <p>
+    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
+    documentation
+  </p>
 </template>
 
-<script>
-import HeroComponent from '@/components/HeroComponent.vue';
-import ProjectsComponent from '@/components/ProjectsComponent.vue';
-import JobsComponent from '@/components/JobsComponent.vue';
-import RepositoriesComponent from '@/components/RepositoriesComponent.vue';
-import SocialComponent from '@/components/SocialComponent.vue';
-import DisplayCodeComponent from '@/components/DisplayCodeComponent.vue';
-
-export default {
-  name: 'App',
-  components: {
-    HeroComponent,
-    ProjectsComponent,
-    JobsComponent,
-    RepositoriesComponent,
-    SocialComponent,
-    DisplayCodeComponent,
-  },
-};
-</script>
-
-<style lang="scss">
-@import "src/scss/theme";
-</style>
+<style scoped></style>
