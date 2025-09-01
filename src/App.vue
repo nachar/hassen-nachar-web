@@ -2,7 +2,7 @@
 
 <template>
   <v-app>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, harum?</p>
+    <h1>Hassen Nachar <span>Portfolio</span></h1>
   </v-app>
 </template>
 
