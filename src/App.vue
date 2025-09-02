@@ -1,8 +1,10 @@
-<script setup></script>
+<script setup>
+import ChatComponent from '@/composables/components/ChatComponent.vue';
+</script>
 
 <template>
   <v-app>
-    <h1>Hassen Nachar <span>Portfolio</span></h1>
+    <ChatComponent />
   </v-app>
 </template>
 
