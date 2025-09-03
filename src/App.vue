@@ -17,15 +17,17 @@ import PresentationComponent from '@/components/PresentationComponent.vue';
 </template>
 
 <style scoped lang="scss">
-$presentation-height: 200px;
-$left-element-width: 30%;
+@use '@/styles/colors' as colors;
+
+$presentation-height: 85px;
+$left-element-width: 35%;
 
 .layout {
   &__presentation {
     height: $presentation-height;
     width: 100%;
-    background-color: #556b63; // TODO Pasar a colors
-    color: #fff; // TODO Pasar a colors
+    background-color: colors.$primary;
+    color: colors.$surface;
 
     @media (min-width: 960px) {
       width: $left-element-width;

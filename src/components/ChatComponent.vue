@@ -6,14 +6,13 @@
           <div
             v-for="(msg, index) in messages"
             :key="index"
-            class="d-flex"
-            :class="msg.type === 'question' ? 'mb-4 justify-end' : 'mb-4 justify-start'"
+            :ref="msg.type === 'question' ? setQuestionRef : null"
+            class="d-flex mb-4"
+            :class="msg.type === 'question' ? 'justify-end' : 'justify-start'"
           >
             <div
-              :class="
-                msg.type === 'question' ? 'message message--question' : 'message message--answer'
-              "
-              class="rounded pa-3"
+              :class="msg.type === 'question' ? 'message--question' : 'message--answer'"
+              class="message rounded pa-3"
             >
               <div v-html="msg.text"></div>
             </div>
@@ -40,7 +39,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
+import { nextTick, ref, watch } from 'vue';
 
 import { useAsk } from '@/composables/api/useAsk.js';
 
@@ -55,11 +54,26 @@ const messages = ref([
 ]);
 
 const question = ref('');
+const questionRefs = ref([]);
+
+const setQuestionRef = (el) => {
+  if (el) questionRefs.value.push(el);
+};
+
+const scrollToLastQuestion = () => {
+  nextTick(() => {
+    const lastQuestion = questionRefs.value.at(-1); // último elemento
+    if (lastQuestion) {
+      lastQuestion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+};
 
 const sendQuestion = () => {
   messages.value.push({ type: 'question', text: question.value.trim() });
   fetchAsk({ params: { question: question.value.trim() } });
   question.value = '';
+  scrollToLastQuestion();
 };
 
 watch(fetchAskSuccess, (newFetchAskSuccess) => {
@@ -111,6 +125,32 @@ $input-height: 100px;
   }
   &--answer {
     background-color: colors.$surface;
+  }
+}
+</style>
+
+<!-- To v-html - No scoped -->
+<style lang="scss">
+@use '@/styles/colors' as colors;
+
+.message {
+  ul,
+  ol {
+    margin: 8px 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  table,
+  th,
+  td {
+    border-collapse: collapse;
+    border: 1px colors.$gray-light solid;
+  }
+  th,
+  td {
+    padding: 4px;
   }
 }
 </style>
