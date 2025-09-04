@@ -1,6 +1,11 @@
 <script setup>
+import { ref } from 'vue';
+
 import ChatComponent from '@/components/ChatComponent.vue';
+import DialogComponent from '@/components/DialogComponent.vue';
 import PresentationComponent from '@/components/PresentationComponent.vue';
+
+const dialog = ref(true);
 </script>
 
 <template>
@@ -10,9 +15,10 @@ import PresentationComponent from '@/components/PresentationComponent.vue';
         <PresentationComponent />
       </div>
       <div class="layout__chat">
-        <ChatComponent />
+        <ChatComponent @open-modal="() => (dialog = true)" />
       </div>
     </div>
+    <DialogComponent v-model="dialog" @close-modal="() => (dialog = false)" />
   </v-app>
 </template>
 

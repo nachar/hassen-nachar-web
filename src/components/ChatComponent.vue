@@ -20,6 +20,7 @@
                 color="error"
                 :text="'Show More'"
                 class="mt-3"
+                @click="openModal"
               />
             </div>
           </div>
@@ -56,6 +57,8 @@ const { fetchAsk, fetchAskLoading, fetchAskError, fetchAskSuccess, fetchAskReset
   useAsk();
 const { selectedKey, setCustomKey } = useCustomKeys();
 
+const emit = defineEmits(['openModal']);
+
 const messages = ref([
   {
     type: 'answer',
@@ -64,10 +67,15 @@ const messages = ref([
 ]);
 
 const question = ref('');
+
 const questionRefs = ref([]);
 
 const setQuestionRef = (el) => {
   if (el) questionRefs.value.push(el);
+};
+
+const openModal = () => {
+  emit('openModal');
 };
 
 const scrollToLastQuestion = () => {
