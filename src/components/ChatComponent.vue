@@ -15,6 +15,12 @@
               class="message rounded pa-3"
             >
               <div v-html="msg.text"></div>
+              <v-btn
+                v-if="msg.type === 'answer' && selectedKey && index === messages.length - 1"
+                color="error"
+                :text="'Show More'"
+                class="mt-3"
+              />
             </div>
           </div>
           <v-skeleton-loader v-if="fetchAskLoading" type="paragraph" />
@@ -42,14 +48,18 @@
 import { nextTick, ref, watch } from 'vue';
 
 import { useAsk } from '@/composables/api/useAsk.js';
+import { useCustomKeys } from '@/composables/useCustomKeys.js';
+import { WELCOME_MESSAGE } from '@/globals/constants.js';
+import { formatResponse } from '@/globals/utils.js';
 
 const { fetchAsk, fetchAskLoading, fetchAskError, fetchAskSuccess, fetchAskReset, fetchAskData } =
   useAsk();
+const { selectedKey, setCustomKey } = useCustomKeys();
 
 const messages = ref([
   {
     type: 'answer',
-    text: '<h2>Welcome to Hassen Nachar’s AI Assistant!</h2><p>I am an <b>AI specialized</b> in answering questions about <b>Hassen Nachar’s professional CV</b>.</p><p>Ask me about his experience, skills, projects, or career background, and I’ll provide clear and structured answers.</p>',
+    text: WELCOME_MESSAGE,
   },
 ]);
 
@@ -73,12 +83,17 @@ const sendQuestion = () => {
   messages.value.push({ type: 'question', text: question.value.trim() });
   fetchAsk({ params: { question: question.value.trim() } });
   question.value = '';
+  setCustomKey('');
   scrollToLastQuestion();
 };
 
 watch(fetchAskSuccess, (newFetchAskSuccess) => {
   if (newFetchAskSuccess) {
-    messages.value.push({ type: 'answer', text: fetchAskData?.value?.answer });
+    const { text, customKey } = formatResponse(fetchAskData?.value?.answer);
+    messages.value.push({ type: 'answer', text });
+    if (customKey) {
+      setCustomKey(customKey);
+    }
     fetchAskReset();
   }
 });
