@@ -37,17 +37,17 @@ $left-element-width: 35%;
 
     @media (min-width: 960px) {
       width: $left-element-width;
-      height: 100vh;
+      height: 100dvh;
     }
   }
 
   &__chat {
-    height: calc(100vh - $presentation-height);
+    height: calc(100dvh - $presentation-height);
     width: 100%;
 
     @media (min-width: 960px) {
       width: calc(100% - $left-element-width);
-      height: 100vh;
+      height: 100dvh;
     }
   }
 }

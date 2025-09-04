@@ -132,7 +132,7 @@ $input-height: 100px;
     border-bottom: 1px colors.$gray-light solid;
     overflow-y: scroll;
     &__content {
-      padding: 16px 16px 100vh 16px;
+      padding: 16px 16px 100dvh 16px;
     }
   }
   &__input {
