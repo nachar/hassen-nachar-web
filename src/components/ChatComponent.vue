@@ -37,7 +37,7 @@
           clearable
           @keyup.enter="sendQuestion"
         />
-        <v-btn color="primary" :disabled="!question" @click="sendQuestion">
+        <v-btn color="primary" :disabled="!question || fetchAskLoading" @click="sendQuestion">
           <v-icon>mdi-send</v-icon>
         </v-btn>
       </div>

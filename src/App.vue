@@ -5,7 +5,7 @@ import ChatComponent from '@/components/ChatComponent.vue';
 import DialogComponent from '@/components/DialogComponent.vue';
 import PresentationComponent from '@/components/PresentationComponent.vue';
 
-const dialog = ref(true);
+const dialog = ref(false);
 </script>
 
 <template>
