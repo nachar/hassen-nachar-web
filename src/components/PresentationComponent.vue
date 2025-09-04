@@ -10,6 +10,7 @@
       class="presentation__link ml-auto ml-md-0"
       href="https://www.linkedin.com/in/hassen-nachar-5667154a/"
       target="_blank"
+      rel="noopener noreferrer"
       ><v-icon>mdi-linkedin</v-icon></a
     >
   </div>
