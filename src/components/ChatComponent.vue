@@ -23,7 +23,7 @@
                   selectedMessages
                 "
               >
-                <p>
+                <p class="mt-4">
                   <b>{{ selectedMessages.main }}</b>
                 </p>
                 <v-btn

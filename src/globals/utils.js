@@ -6,13 +6,12 @@ export const formatResponse = (response) => {
   let text = response;
 
   for (const key of MORE_INFO_KEYS) {
-    if (response.includes(key)) {
-      text = response.replace(key, '');
+    if (text.includes(key)) {
+      text = text.replace(key, '');
 
       const [currentKey, currentLanguage] = key.replaceAll('*', '').split('-');
       customKey = currentKey;
       language = currentLanguage;
-      break;
     }
   }
 
