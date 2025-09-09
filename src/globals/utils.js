@@ -1,15 +1,20 @@
+import { MORE_INFO_KEYS } from '@/globals/constants.js';
+
 export const formatResponse = (response) => {
-  const keys = ['***projects***', '***jobs***', '***personal_information***', '***links***'];
   let customKey = '';
+  let language = '';
   let text = response;
 
-  for (const key of keys) {
+  for (const key of MORE_INFO_KEYS) {
     if (response.includes(key)) {
       text = response.replace(key, '');
-      customKey = key;
+
+      const [currentKey, currentLanguage] = key.replaceAll('*', '').split('-');
+      customKey = currentKey;
+      language = currentLanguage;
       break;
     }
   }
 
-  return { text, customKey };
+  return { text, customKey, language };
 };

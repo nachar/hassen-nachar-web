@@ -15,13 +15,24 @@
               class="message rounded pa-3"
             >
               <div v-html="msg.text"></div>
-              <v-btn
-                v-if="msg.type === 'answer' && selectedKey && index === messages.length - 1"
-                color="error"
-                :text="'Show More'"
-                class="mt-3"
-                @click="openModal"
-              />
+              <template
+                v-if="
+                  index === messages.length - 1 &&
+                  msg.type === 'answer' &&
+                  selectedKey &&
+                  selectedMessages
+                "
+              >
+                <p>
+                  <b>{{ selectedMessages.main }}</b>
+                </p>
+                <v-btn
+                  :text="selectedMessages.button"
+                  color="primary"
+                  class="mt-3"
+                  @click="openModal"
+                />
+              </template>
             </div>
           </div>
           <v-skeleton-loader v-if="fetchAskLoading" type="paragraph" />
@@ -30,6 +41,7 @@
       <div class="chat__input pa-4 d-flex align-center">
         <v-text-field
           v-model="question"
+          :disabled="fetchAskLoading"
           class="mr-4"
           label="Ask me anything about Hassen..."
           variant="solo"
@@ -51,11 +63,12 @@ import { nextTick, ref, watch } from 'vue';
 import { useAsk } from '@/composables/api/useAsk.js';
 import { useCustomKeys } from '@/composables/useCustomKeys.js';
 import { WELCOME_MESSAGE } from '@/globals/constants.js';
+import { showMoreMessages } from '@/globals/showMoreMessages.js';
 import { formatResponse } from '@/globals/utils.js';
 
 const { fetchAsk, fetchAskLoading, fetchAskError, fetchAskSuccess, fetchAskReset, fetchAskData } =
   useAsk();
-const { selectedKey, setCustomKey } = useCustomKeys();
+const { selectedKey, selectedMessages, setCustomKey, setMessages } = useCustomKeys();
 
 const emit = defineEmits(['openModal']);
 
@@ -92,15 +105,17 @@ const sendQuestion = () => {
   fetchAsk({ params: { question: question.value.trim() } });
   question.value = '';
   setCustomKey('');
+  setMessages(undefined);
   scrollToLastQuestion();
 };
 
 watch(fetchAskSuccess, (newFetchAskSuccess) => {
   if (newFetchAskSuccess) {
-    const { text, customKey } = formatResponse(fetchAskData?.value?.answer);
+    const { text, customKey, language } = formatResponse(fetchAskData?.value?.answer);
     messages.value.push({ type: 'answer', text });
-    if (customKey) {
+    if (customKey && language) {
       setCustomKey(customKey);
+      setMessages(showMoreMessages[language][customKey]);
     }
     fetchAskReset();
   }

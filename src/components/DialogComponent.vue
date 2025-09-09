@@ -12,10 +12,10 @@ const { selectedKey } = useCustomKeys();
 const emit = defineEmits(['closeModal']);
 
 const customKeysMap = {
-  '***projects***': ProjectsComponent,
-  '***jobs***': JobsComponent,
-  '***personal_information***': PersonalInformation,
-  '***links***': LinksComponents,
+  projects: ProjectsComponent,
+  jobs: JobsComponent,
+  personal_information: PersonalInformation,
+  links: LinksComponents,
 };
 
 const closeModal = () => {
