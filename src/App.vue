@@ -1,35 +1,54 @@
-<template>
-  <div id="app" class="app">
-    <HeroComponent/>
-    <ProjectsComponent/>
-    <JobsComponent/>
-    <RepositoriesComponent/>
-    <SocialComponent/>
-    <DisplayCodeComponent/>
-  </div>
-</template>
+<script setup>
+import { ref } from 'vue';
 
-<script>
-import HeroComponent from '@/components/HeroComponent.vue';
-import ProjectsComponent from '@/components/ProjectsComponent.vue';
-import JobsComponent from '@/components/JobsComponent.vue';
-import RepositoriesComponent from '@/components/RepositoriesComponent.vue';
-import SocialComponent from '@/components/SocialComponent.vue';
-import DisplayCodeComponent from '@/components/DisplayCodeComponent.vue';
+import ChatComponent from '@/components/ChatComponent.vue';
+import DialogComponent from '@/components/DialogComponent.vue';
+import PresentationComponent from '@/components/PresentationComponent.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HeroComponent,
-    ProjectsComponent,
-    JobsComponent,
-    RepositoriesComponent,
-    SocialComponent,
-    DisplayCodeComponent,
-  },
-};
+const dialog = ref(false);
 </script>
 
-<style lang="scss">
-@import "src/scss/theme";
+<template>
+  <v-app>
+    <div class="layout d-flex flex-column flex-md-row">
+      <div class="layout__presentation">
+        <PresentationComponent />
+      </div>
+      <div class="layout__chat">
+        <ChatComponent @open-modal="() => (dialog = true)" />
+      </div>
+    </div>
+    <DialogComponent v-model="dialog" @close-modal="() => (dialog = false)" />
+  </v-app>
+</template>
+
+<style scoped lang="scss">
+@use '@/styles/colors' as colors;
+
+$presentation-height: 85px;
+$left-element-width: 35%;
+
+.layout {
+  &__presentation {
+    height: $presentation-height;
+    width: 100%;
+    background-color: colors.$primary;
+    color: colors.$surface;
+
+    @media (min-width: 960px) {
+      width: $left-element-width;
+      height: 100dvh;
+    }
+  }
+
+  &__chat {
+    height: calc(100dvh - $presentation-height);
+    width: 100%;
+
+    @media (min-width: 960px) {
+      width: calc(100% - $left-element-width);
+      height: 100dvh;
+    }
+  }
+}
 </style>

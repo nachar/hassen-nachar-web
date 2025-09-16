@@ -1,69 +1,220 @@
-<template>
-  <LayoutComponent
-    :title="$t('projects_title')"
-    :description="$t('projects_description')"
-    :id-element="'code-projects-component'">
-    <ul class="projects list-unstyled text-center">
-      <li v-for="project in projects"
-          :key="project.key"
-          class="projects__item d-inline-block p-1">
-        <a :href="project.url"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="project app-box-border text-decoration-none d-block">
-          <span class="project__name d-block">{{ project.name }}</span>
-          <span class="project__type d-block">{{ project.type }} -
-            <span class="project__type__company">{{ project.company }}</span>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </LayoutComponent>
-</template>
-
-<script>
-import LayoutComponent from '@/components/LayoutComponent.vue';
-import MixinProjects from '@/mixins/MixinProjects';
-
-export default {
-  name: 'ProjectComponent',
-  mixins: [MixinProjects],
-  components: {
-    LayoutComponent,
+<script setup>
+const projects = [
+  {
+    company: 'GFT',
+    projects: {
+      web: [
+        {
+          title: 'Web BBVA',
+          sector: 'Financial',
+        },
+        {
+          title: 'FinOps Champions',
+          sector: 'Financial',
+        },
+      ],
+      mobile: [
+        {
+          title: 'App BBVA',
+          sector: 'Financial',
+        },
+      ],
+    },
   },
+  {
+    company: 'Modyo',
+    projects: {
+      web: [
+        {
+          title: 'PC Factory',
+          sector: 'Retail',
+        },
+        {
+          title: 'Banco Mundo Mujer',
+          sector: 'Financial',
+        },
+        {
+          title: 'Dando by CFG',
+          sector: 'Fintech',
+        },
+        {
+          title: 'BCI Miami',
+          sector: 'Financial',
+        },
+        {
+          title: 'Santander Superdigital',
+          sector: 'Financial',
+        },
+        {
+          title: 'Consorcio',
+          sector: 'Financial',
+        },
+        {
+          title: 'Copec',
+          sector: 'Energy',
+        },
+        {
+          title: 'Santander',
+          sector: 'Financial',
+        },
+        {
+          title: 'Cinemark Chile',
+          sector: 'Entertainment',
+        },
+        {
+          title: 'Cinemark Colombia',
+          sector: 'Entertainment',
+        },
+        {
+          title: 'Cinemark Perú',
+          sector: 'Entertainment',
+        },
+        {
+          title: 'Cinemark Bolivia',
+          sector: 'Entertainment',
+        },
+        {
+          title: 'Cinemark Paraguay',
+          sector: 'Entertainment',
+        },
+        {
+          title: 'BCI Chile',
+          sector: 'Financial',
+        },
+        {
+          title: 'Sencillito',
+          sector: 'Fintechs',
+        },
+        {
+          title: 'Cocha',
+          sector: 'Tourism',
+        },
+      ],
+      mobile: [
+        {
+          title: 'PagoClick (Copec)',
+          sector: 'Energy',
+        },
+        {
+          title: 'Cinemark Chile',
+          sector: 'Entertainment',
+        },
+      ],
+    },
+  },
+  {
+    company: 'Techmobile',
+    projects: {
+      web: [
+        {
+          title: 'Bioscell',
+          sector: 'Biotechnology',
+        },
+        {
+          title: 'Marina Golf Rapel',
+          sector: 'Tourism',
+        },
+        {
+          title: 'Productora del Lago',
+          sector: 'Media',
+        },
+      ],
+      mobile: [
+        {
+          title: 'Mundo Copec',
+          sector: 'Energy',
+        },
+        {
+          title: 'Tribuna Centenario',
+          sector: 'Sports',
+        },
+      ],
+    },
+  },
+  {
+    company: 'DevLab',
+    projects: {
+      web: [
+        {
+          title: 'IMS',
+          sector: 'Mining',
+        },
+        {
+          title: 'Aygcamp',
+          sector: 'Technology',
+        },
+        {
+          title: 'Vías Chile',
+          sector: 'Infrastructure',
+        },
+      ],
+      mobile: [
+        {
+          title: 'IMS',
+          sector: 'Mining',
+        },
+        {
+          title: 'Aygcamp',
+          sector: 'Technology',
+        },
+      ],
+    },
+  },
+];
+
+const calculateTotalProjects = (projectsObject) => {
+  const webCount = projectsObject.web ? projectsObject.web.length : 0;
+  const mobileCount = projectsObject.mobile ? projectsObject.mobile.length : 0;
+  return webCount + mobileCount;
 };
 </script>
 
-<style lang="scss" scoped>
-@import "src/scss/variables";
+<template>
+  <v-list class="bg-transparent" lines="two">
+    <v-list-group v-for="(company, index) in projects" :key="index" :value="company.company">
+      <template #activator="{ props }">
+        <v-list-item
+          v-bind="props"
+          :title="company.company"
+          :subtitle="`Total projects: ${calculateTotalProjects(company.projects)}`"
+          rounded="xl"
+        />
+      </template>
 
-.projects {
-  &__item {
-    width: 50%;
+      <v-list-group v-if="company.projects.web" :value="`${index}-web`">
+        <template #activator="{ props }">
+          <v-list-item v-bind="props" title="Web" class="pl-12" rounded="xl" />
+        </template>
+        <v-list-item
+          v-for="(project, projectIndex) in company.projects.web"
+          :key="`web-${index}-${projectIndex}`"
+          :title="project.title"
+          :subtitle="`Sector: ${project.sector}`"
+          class="pl-16"
+          rounded="xl"
+        />
+      </v-list-group>
 
-    @media (min-width: 992px){
-      width: 33.3333333%;
-    }
-  }
-}
+      <v-list-group v-if="company.projects.mobile" :value="`${index}-mobile`">
+        <template #activator="{ props }">
+          <v-list-item v-bind="props" title="Mobile" class="pl-12" rounded="xl" />
+        </template>
+        <v-list-item
+          v-for="(project, projectIndex) in company.projects.mobile"
+          :key="`mobile-${index}-${projectIndex}`"
+          :title="project.title"
+          :subtitle="`Sector: ${project.sector}`"
+          class="pl-16"
+          rounded="xl"
+        />
+      </v-list-group>
+    </v-list-group>
+  </v-list>
+</template>
 
-.project {
-  color: $color-black;
-
-  &:hover,
-  &:active,
-  &:focus,
-  &:visited {
-    color: $color-black;
-  }
-
-  &__type {
-    color: $color-gray;
-    font-size: .7rem;
-
-    &__company {
-      color: $color-black;
-    }
-  }
+<style scoped>
+.v-list-item,
+.v-list-group {
+  margin-bottom: 8px;
 }
 </style>
