@@ -12,6 +12,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^6.0.8",
+    "vue-i18n": "^11.1.10",
     "@mdi/font": "^7.4.47",
     "axios": "^1.10.0",
     "vue": "^3.5.18",
