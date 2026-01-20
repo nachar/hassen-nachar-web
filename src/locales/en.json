@@ -1,1 +1,75 @@
-{}
+{
+  "header": {
+    "name": "Hassen Nachar",
+    "role": "senior frontend engineer"
+  },
+
+  "nav": {
+    "about": "about",
+    "experience": "experience",
+    "projects": "projects",
+    "apps": "apps",
+    "links": "links"
+  },
+
+  "hero": {
+    "title": "Hassen Nachar - Senior frontend engineer",
+    "subtitle": "Senior Front-End Engineer with 10+ years developing and architecting digital solutions for financial and retail sectors, specializing in banking platforms. Skilled in team mentoring, cloud architecture, and building scalable web/mobile apps, delivering agile solutions with best practices in performance, accessibility, and maintainability.",
+    "contact": "contact"
+  },
+
+  "chatbot": {
+    "title": "Ask my ai chatbot",
+    "description": "Ask anything about my experience, projects, skills or impact. the chatbot knows my professional background",
+    "cta": "ask the chatbot"
+  },
+
+  "about": {
+    "title": "about me",
+    "description": "senior frontend engineer with 10+ years of experience delivering scalable, high-performance web and mobile applications for financial and enterprise environments",
+    "skills": ["javascript", "typescript", "react", "vue", "cloud"]
+  },
+
+  "experience": {
+    "title": "experience",
+    "gft": {
+      "title": "gft – frontend engineer",
+      "description": "bbva projects focused on cloud governance, hybrid mobile apps and scalable frontend platforms"
+    },
+    "modyo": {
+      "title": "modyo – frontend architect",
+      "description": "led frontend architecture for santander, bci miami, pc factory and cinemark latam"
+    },
+    "earlier": {
+      "title": "earlier roles",
+      "description": "android, web and api development across multiple industries"
+    }
+  },
+
+  "projects": {
+    "title": "projects",
+    "view": "view",
+    "items": [
+      {
+        "title": "banking platform",
+        "description": "large-scale banking frontend with cloud optimization"
+      },
+      {
+        "title": "hybrid mobile app",
+        "description": "cross-country mobile app using web + native integrations"
+      },
+      {
+        "title": "enterprise web app",
+        "description": "scalable frontend architecture with design systems"
+      }
+    ]
+  },
+
+  "links": {
+    "title": "links",
+    "github": "github",
+    "linkedin": "linkedin",
+    "portfolio": "portfolio",
+    "email": "email"
+  }
+}
