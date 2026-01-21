@@ -3,6 +3,7 @@ import AboutSection from '@/components/AboutSection.vue';
 import AIChatbotPromotion from '@/components/AIChatbotPromotion.vue';
 import AppHeader from '@/components/AppHeader.vue';
 import HeroSection from '@/components/HeroSection.vue';
+import JobsSection from '@/components/JobsSection.vue';
 import LinksSection from '@/components/LinksSection.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue';
 import ShopBuddy from '@/components/ShopBuddy.vue';
@@ -18,6 +19,7 @@ import ShopBuddy from '@/components/ShopBuddy.vue';
           <HeroSection />
           <AIChatbotPromotion />
           <AboutSection />
+          <JobsSection />
           <ProjectsSection />
           <ShopBuddy />
           <LinksSection />

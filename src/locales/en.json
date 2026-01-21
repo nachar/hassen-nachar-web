@@ -31,19 +31,7 @@
   },
 
   "experience": {
-    "title": "experience",
-    "gft": {
-      "title": "gft – frontend engineer",
-      "description": "bbva projects focused on cloud governance, hybrid mobile apps and scalable frontend platforms"
-    },
-    "modyo": {
-      "title": "modyo – frontend architect",
-      "description": "led frontend architecture for santander, bci miami, pc factory and cinemark latam"
-    },
-    "earlier": {
-      "title": "earlier roles",
-      "description": "android, web and api development across multiple industries"
-    }
+    "title": "Professional Experience"
   },
 
   "projects": {
