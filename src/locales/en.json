@@ -14,7 +14,7 @@
 
   "hero": {
     "title": "Hassen Nachar - Senior frontend engineer",
-    "subtitle": "Senior Front-End Engineer with 10+ years developing and architecting digital solutions for financial and retail sectors, specializing in banking platforms. Skilled in team mentoring, cloud architecture, and building scalable web/mobile apps, delivering agile solutions with best practices in performance, accessibility, and maintainability.",
+    "subtitle": "Senior Frontend Engineer with 10+ years developing and architecting digital solutions for financial and retail sectors, specializing in banking platforms. Skilled in team mentoring, cloud architecture, and building scalable web/mobile apps, delivering agile solutions with best practices in performance, accessibility, and maintainability.",
     "contact": "contact"
   },
 
@@ -31,7 +31,33 @@
   },
 
   "experience": {
-    "title": "Professional Experience"
+    "title": "Professional Experience",
+    "jobs": {
+      "gft": {
+        "company": "GFT",
+        "job_title": "Frontend Engineer",
+        "period": "2023 - Today",
+        "description": "Led BBVA frontend initiatives across web and hybrid mobile platforms for five countries, working closely with architecture teams to improve public cloud governance, scalability, performance, and cost optimization. Delivered high-quality, maintainable solutions aligned with enterprise standards and agile practices."
+      },
+      "modyo": {
+        "company": "Modyo",
+        "job_title": "Frontend Engineer",
+        "period": "2016 - 2023",
+        "description": "Led frontend architecture and development at Modyo, delivering web and mobile solutions for major financial clients such as Santander, BCI Miami, PC Factory, and Cinemark across Latin America. Defined standards, unified architectures, mentored teams, and coordinated technology decisions to ensure scalable, maintainable platforms."
+      },
+      "techmobile": {
+        "company": "Techmobile (Suika)",
+        "job_title": "Android & Frontend Developer",
+        "period": "2014 - 2016",
+        "description": "Developed native Android and web applications as part of a small, versatile team, delivering scalable cross-platform solutions for clients such as Copec. Contributed to multiple projects using modern frontend frameworks, with a strong focus on performance, clean architecture, and maintainable codebases."
+      },
+      "devlab": {
+        "company": "DevLab",
+        "job_title": "API & Frontend Developer",
+        "period": "2013 - 2014",
+        "description": "Developed hybrid web applications for Android and iOS, built APIs for web and mobile platforms, and delivered partner websites. Contributed to mining industry projects integrating hardware and sensor data via APIs to automate environmental monitoring and control systems."
+      }
+    }
   },
 
   "projects": {
