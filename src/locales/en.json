@@ -62,21 +62,40 @@
 
   "projects": {
     "title": "projects",
-    "view": "view",
-    "items": [
-      {
-        "title": "banking platform",
-        "description": "large-scale banking frontend with cloud optimization"
-      },
-      {
-        "title": "hybrid mobile app",
-        "description": "cross-country mobile app using web + native integrations"
-      },
-      {
-        "title": "enterprise web app",
-        "description": "scalable frontend architecture with design systems"
-      }
-    ]
+    "company": "Company",
+    "sector": "Sector",
+    "companies": {
+      "gft": "GFT",
+      "modyo": "Modyo",
+      "techmobile": "Techmobile (Suika)",
+      "devlab": "DevLab"
+    },
+    "sectors": {
+      "financial": "Financial",
+      "energy": "Energy",
+      "entertainment": "Entertainment",
+      "biotechnology": "Biotechnology",
+      "tourism": "Tourism",
+      "sports": "Sports",
+      "mining": "Mining",
+      "infrastructure": "Infrastructure"
+    },
+    "items": {
+      "bbva": "BBVA",
+      "finops_champions": "FinOps Champions",
+      "santander": "Santander",
+      "bci_miami_chile": "BCI Miami & Chile",
+      "copec": "Copec",
+      "pagoclick": "PagoClick",
+      "consorcio": "Consorcio",
+      "cinemark": "Cinemark",
+      "bioscell": "Bioscell",
+      "marina_golf_rapel": "Marina Golf Rapel",
+      "mundo_copec": "Mundo Copec",
+      "tribuna_centenario": "Tribuna Centenario",
+      "ims": "IMS",
+      "vias_chile": "Vías Chile"
+    }
   },
 
   "links": {
