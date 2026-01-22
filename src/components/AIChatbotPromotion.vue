@@ -5,7 +5,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <v-card class="mb-16" elevation="2">
+  <v-card class="mb-8" elevation="2">
     <v-card-text>
       <v-row align="center">
         <v-col cols="12" md="2" class="text-center">

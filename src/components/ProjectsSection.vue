@@ -25,8 +25,8 @@ const projects = [
 </script>
 
 <template>
-  <h2 class="text-h5 font-weight-bold mb-6">{{ t('projects.title') }}</h2>
-  <v-row class="mb-16" dense>
+  <h2 id="projects" class="text-h5 font-weight-bold py-6">{{ t('projects.title') }}</h2>
+  <v-row class="mb-8" dense>
     <v-col
       v-for="project in projects"
       :key="project.company + project.title"

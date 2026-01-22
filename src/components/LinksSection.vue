@@ -5,7 +5,7 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <h2 class="text-h5 font-weight-bold mb-6">
+  <h2 id="links" class="text-h5 font-weight-bold py-6">
     {{ t('links.title') }}
   </h2>
 

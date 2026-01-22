@@ -7,10 +7,10 @@ const jobsKeys = ['gft', 'modyo', 'techmobile', 'devlab'];
 </script>
 
 <template>
-  <h2 class="text-h5 font-weight-bold mb-6">
+  <h2 id="jobs" class="text-h5 font-weight-bold py-6">
     {{ t('experience.title') }}
   </h2>
-  <v-row class="mb-16">
+  <v-row class="mb-8">
     <v-col cols="12">
       <v-card elevation="1" class="px-2 py-3">
         <v-card-text>

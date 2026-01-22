@@ -26,10 +26,10 @@ const { t } = useI18n();
       <!-- Desktop navigation -->
       <v-tabs v-if="mdAndUp" align-tabs="end">
         <v-tab @click="goTo('#about')">{{ t('nav.about') }}</v-tab>
-        <v-tab>{{ t('nav.experience') }}</v-tab>
-        <v-tab>{{ t('nav.projects') }}</v-tab>
-        <v-tab>{{ t('nav.apps') }}</v-tab>
-        <v-tab>{{ t('nav.links') }}</v-tab>
+        <v-tab @click="goTo('#jobs')">{{ t('nav.experience') }}</v-tab>
+        <v-tab @click="goTo('#projects')">{{ t('nav.projects') }}</v-tab>
+        <v-tab @click="goTo('#apps')">{{ t('nav.apps') }}</v-tab>
+        <v-tab @click="goTo('#links')">{{ t('nav.links') }}</v-tab>
       </v-tabs>
 
       <!-- Mobile hamburger -->
@@ -47,10 +47,34 @@ const { t } = useI18n();
           drawer = false;
         "
       />
-      <v-list-item :title="t('nav.experience')" @click="drawer = false" />
-      <v-list-item :title="t('nav.projects')" @click="drawer = false" />
-      <v-list-item :title="t('nav.apps')" @click="drawer = false" />
-      <v-list-item :title="t('nav.links')" @click="drawer = false" />
+      <v-list-item
+        :title="t('nav.experience')"
+        @click="
+          goTo('#jobs');
+          drawer = false;
+        "
+      />
+      <v-list-item
+        :title="t('nav.projects')"
+        @click="
+          goTo('#projects');
+          drawer = false;
+        "
+      />
+      <v-list-item
+        :title="t('nav.apps')"
+        @click="
+          goTo('#apps');
+          drawer = false;
+        "
+      />
+      <v-list-item
+        :title="t('nav.links')"
+        @click="
+          goTo('#links');
+          drawer = false;
+        "
+      />
     </v-list>
   </v-navigation-drawer>
 </template>

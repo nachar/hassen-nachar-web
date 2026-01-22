@@ -5,10 +5,10 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <h2 class="text-h5 font-weight-bold mb-6">
+  <h2 id="apps" class="text-h5 font-weight-bold py-6">
     {{ t('apps.title') }}
   </h2>
-  <v-row class="mb-16">
+  <v-row class="mb-8">
     <v-col cols="12">
       <v-card class="pa-4">
         <div class="d-lg-flex flex-no-wrap justify-space-between text-center text-lg-start">
