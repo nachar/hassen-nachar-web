@@ -18,9 +18,6 @@ const { t } = useI18n();
         <div class="text-h6 font-weight-bold">
           {{ t('header.name') }}
         </div>
-        <div class="text-caption">
-          {{ t('header.role') }}
-        </div>
       </div>
 
       <!-- Desktop navigation -->
