@@ -116,6 +116,10 @@
   },
 
   "chat": {
-    "welcome": "¡Bienvenido al Asistente de IA de Hassen Nachar! Soy una IA especializada en responder preguntas sobre el CV profesional de Hassen Nachar. Pregúntame sobre su experiencia, habilidades, proyectos o trayectoria profesional, y te proporcionaré respuestas claras y estructuradas."
+    "welcome": "¡Bienvenido al Asistente de IA de Hassen Nachar! Soy una IA especializada en responder preguntas sobre el CV profesional de Hassen Nachar. Pregúntame sobre su experiencia, habilidades, proyectos o trayectoria profesional, y te proporcionaré respuestas claras y estructuradas.",
+    "error": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "title": "Asistente IA",
+    "thinking": "La IA está pensando...",
+    "ask_me": "Pregúntame algo..."
   }
 }

@@ -123,6 +123,10 @@
   },
 
   "chat": {
-    "welcome": "Welcome to Hassen Nachar’s AI Assistant! I am an AI specialized in answering questions about Hassen Nachar’s professional CV. Ask me about his experience, skills, projects, or career background, and I’ll provide clear and structured answers."
+    "welcome": "Welcome to Hassen Nachar’s AI Assistant! I am an AI specialized in answering questions about Hassen Nachar’s professional CV. Ask me about his experience, skills, projects, or career background, and I’ll provide clear and structured answers.",
+    "error": "Something went wrong. Please try again.",
+    "title": "AI Assistant",
+    "thinking": "AI is thinking...",
+    "ask_me": "Ask me something..."
   }
 }
