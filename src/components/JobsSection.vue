@@ -7,13 +7,12 @@ const jobsKeys = ['gft', 'modyo', 'techmobile', 'devlab'];
 </script>
 
 <template>
+  <h2 class="text-h5 font-weight-bold mb-6">
+    {{ t('experience.title') }}
+  </h2>
   <v-row class="mb-16">
     <v-col cols="12">
       <v-card elevation="1" class="px-2 py-3">
-        <v-card-title>
-          {{ t('experience.title') }}
-        </v-card-title>
-
         <v-card-text>
           <v-timeline density="compact" align="start">
             <v-timeline-item v-for="key in jobsKeys" :key="key" dot-color="primary" size="small">

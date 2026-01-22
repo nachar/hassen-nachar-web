@@ -2,11 +2,11 @@
 import AboutSection from '@/components/AboutSection.vue';
 import AIChatbotPromotion from '@/components/AIChatbotPromotion.vue';
 import AppHeader from '@/components/AppHeader.vue';
+import AppsSection from '@/components/AppsSection.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import JobsSection from '@/components/JobsSection.vue';
 import LinksSection from '@/components/LinksSection.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue';
-import ShopBuddy from '@/components/ShopBuddy.vue';
 </script>
 
 <template>
@@ -21,7 +21,7 @@ import ShopBuddy from '@/components/ShopBuddy.vue';
           <AboutSection />
           <JobsSection />
           <ProjectsSection />
-          <ShopBuddy />
+          <AppsSection />
           <LinksSection />
         </v-container>
       </v-main>

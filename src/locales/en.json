@@ -25,9 +25,19 @@
   },
 
   "about": {
-    "title": "about me",
-    "description": "senior frontend engineer with 10+ years of experience delivering scalable, high-performance web and mobile applications for financial and enterprise environments",
-    "skills": ["javascript", "typescript", "react", "vue", "cloud"]
+    "title": "About me",
+    "description_p1": "I build frontend solutions with a strong focus on clarity, performance, and long-term maintainability. Over the past 10+ years, I’ve worked on complex web and mobile applications, primarily in banking and enterprise environments, where scalability, accessibility, and code quality are critical from day one.",
+    "description_p2": "My experience spans modern frontend frameworks, hybrid mobile platforms, and design systems used at scale. I’ve collaborated closely with backend, UX, and architecture teams, helping translate complex business requirements into clean, reliable user interfaces that can evolve without friction.",
+    "description_p3": "Beyond development, I actively contribute through technical leadership and mentoring. I enjoy improving team standards, reviewing architectures, and ensuring that frontend decisions support both product goals and sustainable engineering practices.",
+    "chips": {
+      "core_1": "Frontend Architecture",
+      "core_2": "Banking Platforms",
+      "stack_1": "JavaScript / TypeScript",
+      "stack_2": "React",
+      "stack_3": "Vue",
+      "scope_1": "Web & Mobile",
+      "scope_2": "Cloud"
+    }
   },
 
   "experience": {
@@ -61,7 +71,7 @@
   },
 
   "projects": {
-    "title": "projects",
+    "title": "Projects",
     "company": "Company",
     "sector": "Sector",
     "companies": {
@@ -97,12 +107,22 @@
       "vias_chile": "Vías Chile"
     }
   },
+  "apps": {
+    "title": "Apps",
+    "shop_buddy": {
+      "title": "Shop Buddy",
+      "description": "A simple, fast and ad-free iPhone app to organize your shopping list. Keep everything in one place and make grocery shopping easier.",
+      "button": "Download on the App Store"
+    }
+  },
 
   "links": {
-    "title": "links",
+    "title": "Professional links",
     "github": "github",
-    "linkedin": "linkedin",
-    "portfolio": "portfolio",
-    "email": "email"
+    "linkedin": "linkedin"
+  },
+
+  "chat": {
+    "welcome": "Welcome to Hassen Nachar’s AI Assistant! I am an AI specialized in answering questions about Hassen Nachar’s professional CV. Ask me about his experience, skills, projects, or career background, and I’ll provide clear and structured answers."
   }
 }

@@ -9,7 +9,7 @@ const { t } = useI18n();
     {{ t('links.title') }}
   </h2>
 
-  <v-row>
+  <v-row class="d-flex justify-center">
     <v-col cols="12" md="3">
       <v-btn block prepend-icon="mdi-github">
         {{ t('links.github') }}
@@ -18,16 +18,6 @@ const { t } = useI18n();
     <v-col cols="12" md="3">
       <v-btn block prepend-icon="mdi-linkedin">
         {{ t('links.linkedin') }}
-      </v-btn>
-    </v-col>
-    <v-col cols="12" md="3">
-      <v-btn block prepend-icon="mdi-web">
-        {{ t('links.portfolio') }}
-      </v-btn>
-    </v-col>
-    <v-col cols="12" md="3">
-      <v-btn block prepend-icon="mdi-email">
-        {{ t('links.email') }}
       </v-btn>
     </v-col>
   </v-row>

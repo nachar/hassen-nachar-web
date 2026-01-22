@@ -5,23 +5,31 @@ const { t } = useI18n();
 </script>
 
 <template>
+  <h2 class="text-h5 font-weight-bold mb-6">
+    {{ t('about.title') }}
+  </h2>
   <v-row justify="center" class="mb-16">
     <v-col cols="12">
-      <v-card elevation="1">
-        <v-card-title>
-          {{ t('about.title') }}
-        </v-card-title>
-
+      <v-card elevation="1" class="pa-4">
         <v-card-text>
-          {{ t('about.description') }}
+          <p class="mb-4">{{ t('about.description_p1') }}</p>
+          <p class="mb-4">{{ t('about.description_p2') }}</p>
+          <p>{{ t('about.description_p3') }}</p>
         </v-card-text>
 
-        <v-card-actions>
-          <v-chip class="ma-1">JavaScript</v-chip>
-          <v-chip class="ma-1">TypeScript</v-chip>
-          <v-chip class="ma-1">React</v-chip>
-          <v-chip class="ma-1">Vue</v-chip>
-          <v-chip class="ma-1">Cloud</v-chip>
+        <v-card-actions class="flex-wrap">
+          <!-- Core -->
+          <v-chip class="ma-1" color="primary">{{ t('about.chips.core_1') }}</v-chip>
+          <v-chip class="ma-1" color="primary">{{ t('about.chips.core_2') }}</v-chip>
+
+          <!-- Stack -->
+          <v-chip class="ma-1" variant="outlined">{{ t('about.chips.stack_1') }}</v-chip>
+          <v-chip class="ma-1" variant="outlined">{{ t('about.chips.stack_2') }}</v-chip>
+          <v-chip class="ma-1" variant="outlined">{{ t('about.chips.stack_3') }}</v-chip>
+
+          <!-- Scope -->
+          <v-chip class="ma-1" variant="tonal">{{ t('about.chips.scope_1') }}</v-chip>
+          <v-chip class="ma-1" variant="tonal">{{ t('about.chips.scope_2') }}</v-chip>
         </v-card-actions>
       </v-card>
     </v-col>

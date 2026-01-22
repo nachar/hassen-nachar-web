@@ -25,7 +25,7 @@ const projects = [
 </script>
 
 <template>
-  <h2 class="text-h5 font-weight-bold mb-6">Projects</h2>
+  <h2 class="text-h5 font-weight-bold mb-6">{{ t('projects.title') }}</h2>
   <v-row class="mb-16" dense>
     <v-col
       v-for="project in projects"
