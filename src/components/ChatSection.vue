@@ -1,5 +1,3 @@
-<!-- TODO: Me faltan las traducciones a otros idiomas -->
-<!-- TODO: Highlight section -->
 <script setup>
 import { nextTick, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';

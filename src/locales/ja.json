@@ -1,0 +1,132 @@
+{
+  "header": {
+    "name": "Hassen Nachar",
+    "role": "senior frontend engineer"
+  },
+
+  "nav": {
+    "about": "自己紹介",
+    "experience": "経歴",
+    "projects": "プロジェクト",
+    "apps": "アプリ",
+    "links": "リンク"
+  },
+
+  "hero": {
+    "title": "Hassen Nachar - Senior frontend engineer",
+    "subtitle": "金融および小売セクター向けのデジタルソリューションの開発・設計に10年以上従事し、特に銀行プラットフォームを専門とするSenior Frontend Engineer。チームメンタリング、クラウドアーキテクチャ、スケーラブルなWeb/モバイルアプリ構築に長け、パフォーマンス、アクセシビリティ、保守性のベストプラクティスに基づいたアジャイルなソリューションを提供します。",
+    "contact": "お問い合わせ"
+  },
+
+  "chatbot": {
+    "title": "AIチャットボットに質問する",
+    "description": "私の経歴、プロジェクト、スキル、実績について何でも聞いてください。チャットボットが私のプロフェッショナルなバックグラウンドを回答します。",
+    "cta": "チャットボットに聞く"
+  },
+
+  "about": {
+    "title": "私について",
+    "description_p1": "私は、明快さ、パフォーマンス、そして長期的な保守性を重視したフロントエンドソリューションを構築しています。過去10年以上にわたり、主に銀行やエンタープライズ環境において、初日からスケーラビリティ、アクセシビリティ、コードの品質が極めて重要視される複雑なWebおよびモバイルアプリケーションに携わってきました。",
+    "description_p2": "私の経験は、モダンなフロントエンドフレームワーク、ハイブリッドモバイルプラットフォーム、大規模に展開されるデザインシステムに及びます。バックエンド、UX、アーキテクチャチームと密接に連携し、複雑なビジネス要件を、摩擦なく進化し続けるクリーンで信頼性の高いユーザーインターフェースへと変換してきました。",
+    "description_p3": "開発だけでなく、テクニカルリーダーシップやメンタリングを通じても積極的に貢献しています。チーム標準の向上、アーキテクチャのレビュー、そしてフロントエンドの意思決定がプロダクトの目標と持続可能なエンジニアリング慣行の両方を確実にサポートすることにやりがいを感じています。",
+    "chips": {
+      "core_1": "Frontend Architecture",
+      "core_2": "Banking Platforms",
+      "stack_1": "JavaScript / TypeScript",
+      "stack_2": "React",
+      "stack_3": "Vue",
+      "scope_1": "Web & Mobile",
+      "scope_2": "Cloud"
+    }
+  },
+
+  "experience": {
+    "title": "実務経験",
+    "jobs": {
+      "gft": {
+        "company": "GFT",
+        "job_title": "Frontend Engineer",
+        "period": "2023 - 現在",
+        "description": "5か国にわたるBBVAのWebおよびハイブリッドモバイルプラットフォームにおけるフロントエンド・イニシアチブを牽引。アーキテクチャチームと密接に連携し、パブリッククラウドのガバナンス、スケーラビリティ、パフォーマンス、コスト最適化を改善しました。企業標準およびアジャイル慣行に沿った、高品質で保守性の高いソリューションを提供しました。"
+      },
+      "modyo": {
+        "company": "Modyo",
+        "job_title": "Frontend Engineer",
+        "period": "2016 - 2023",
+        "description": "Modyoにてフロントエンドアーキテクチャおよび開発を主導し、中南米全域のSantander、BCI Miami、PC Factory、Cinemarkなどの主要金融クライアントにWebおよびモバイルソリューションを提供。スケーラブルで保守性の高いプラットフォームを実現するため、標準化の定義、アーキテクチャの統一、チームのメンタリング、技術選定の調整を行いました。"
+      },
+      "techmobile": {
+        "company": "Techmobile (Suika)",
+        "job_title": "Android & Frontend Developer",
+        "period": "2014 - 2016",
+        "description": "少数精鋭の多才なチームの一員として、AndroidネイティブおよびWebアプリケーションを開発し、Copecなどのクライアントにスケーラブルなクロスプラットフォーム・ソリューションを提供。パフォーマンス、クリーンアーキテクチャ、保守性の高いコードベースに重点を置き、モダンなフロントエンドフレームワークを用いた複数のプロジェクトに貢献しました。"
+      },
+      "devlab": {
+        "company": "DevLab",
+        "job_title": "API & Frontend Developer",
+        "period": "2013 - 2014",
+        "description": "AndroidおよびiOS向けのハイブリッドWebアプリケーションの開発、Webおよびモバイルプラットフォーム向けのAPI構築、パートナー企業のWebサイト提供に従事。APIを介してハードウェアやセンサーデータを統合し、環境モニタリングおよび制御システムを自動化する鉱業プロジェクトに貢献しました。"
+      }
+    }
+  },
+
+  "projects": {
+    "title": "プロジェクト",
+    "company": "企業名",
+    "sector": "セクター",
+    "companies": {
+      "gft": "GFT",
+      "modyo": "Modyo",
+      "techmobile": "Techmobile (Suika)",
+      "devlab": "DevLab"
+    },
+    "sectors": {
+      "financial": "金融",
+      "energy": "エネルギー",
+      "entertainment": "エンターテインメント",
+      "biotechnology": "バイオテクノロジー",
+      "tourism": "観光",
+      "sports": "スポーツ",
+      "mining": "鉱業",
+      "infrastructure": "インフラ"
+    },
+    "items": {
+      "bbva": "BBVA",
+      "finops_champions": "FinOps Champions",
+      "santander": "Santander",
+      "bci_miami_chile": "BCI Miami & Chile",
+      "copec": "Copec",
+      "pagoclick": "PagoClick",
+      "consorcio": "Consorcio",
+      "cinemark": "Cinemark",
+      "bioscell": "Bioscell",
+      "marina_golf_rapel": "Marina Golf Rapel",
+      "mundo_copec": "Mundo Copec",
+      "tribuna_centenario": "Tribuna Centenario",
+      "ims": "IMS",
+      "vias_chile": "Vías Chile"
+    }
+  },
+  "apps": {
+    "title": "アプリ",
+    "shop_buddy": {
+      "title": "Shop Buddy",
+      "description": "買い物リストを整理するための、シンプルで高速、かつ広告のないiPhoneアプリ。すべてを一箇所にまとめ、日々の買い物をよりスムーズにします。",
+      "button": "App Storeでダウンロード"
+    }
+  },
+
+  "links": {
+    "title": "プロフェッショナルリンク",
+    "github": "github",
+    "linkedin": "linkedin"
+  },
+
+  "chat": {
+    "welcome": "Hassen NacharのAIアシスタントへようこそ！私はHassenの経歴に関する質問にお答えする専門のAIです。経験、スキル、プロジェクト、職歴についてお気軽にお尋ねください。明確に整理された回答を提供します。",
+    "error": "問題が発生しました。もう一度やり直してください。",
+    "title": "AIアシスタント",
+    "thinking": "AIが考え中です...",
+    "ask_me": "質問を入力してください..."
+  }
+}
