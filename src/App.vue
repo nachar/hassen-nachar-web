@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { reactive, ref } from 'vue';
 
 import AboutSection from '@/components/AboutSection.vue';
 import AIChatbotPromotion from '@/components/AIChatbotPromotion.vue';
@@ -16,6 +16,21 @@ const askChatbot = ref(false);
 const changeAskChatbot = () => {
   askChatbot.value = !askChatbot.value;
 };
+
+const highlightSections = reactive({
+  projects: false,
+  jobs: false,
+  about: false,
+  links: false,
+});
+
+const highlightSection = (section) => {
+  highlightSections[section] = true;
+
+  setTimeout(() => {
+    highlightSections[section] = false;
+  }, 2500);
+};
 </script>
 
 <template>
@@ -27,14 +42,14 @@ const changeAskChatbot = () => {
         <v-container class="py-12">
           <HeroSection />
           <AIChatbotPromotion @ask-chatbot="changeAskChatbot" />
-          <AboutSection />
-          <JobsSection />
-          <ProjectsSection />
+          <AboutSection :highlight="highlightSections.about" />
+          <JobsSection :highlight="highlightSections.jobs" />
+          <ProjectsSection :highlight="highlightSections.projects" />
           <AppsSection />
-          <LinksSection />
+          <LinksSection :highlight="highlightSections.links" />
         </v-container>
       </v-main>
-      <ChatSection :ask-chatbot="askChatbot" />
+      <ChatSection :ask-chatbot="askChatbot" @highlight-section="highlightSection" />
     </v-layout>
   </v-app>
 </template>

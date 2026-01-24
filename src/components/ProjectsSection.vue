@@ -1,6 +1,13 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 
+defineProps({
+  highlight: {
+    type: Boolean,
+    default: false,
+  },
+});
+
 const { t } = useI18n();
 
 const projects = [
@@ -26,7 +33,7 @@ const projects = [
 
 <template>
   <h2 id="projects" class="text-h5 font-weight-bold py-6">{{ t('projects.title') }}</h2>
-  <v-row class="mb-8" dense>
+  <v-row :class="['mb-8', highlight && 'highlight']">
     <v-col
       v-for="project in projects"
       :key="project.company + project.title"

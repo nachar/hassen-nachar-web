@@ -1,6 +1,13 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 
+defineProps({
+  highlight: {
+    type: Boolean,
+    default: false,
+  },
+});
+
 const { t } = useI18n();
 </script>
 
@@ -9,7 +16,7 @@ const { t } = useI18n();
     {{ t('links.title') }}
   </h2>
 
-  <v-row>
+  <v-row :class="highlight && 'highlight'">
     <v-col cols="12" md="3">
       <v-btn
         class="mr-4"

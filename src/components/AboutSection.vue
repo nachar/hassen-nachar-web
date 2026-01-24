@@ -1,6 +1,13 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 
+defineProps({
+  highlight: {
+    type: Boolean,
+    default: false,
+  },
+});
+
 const { t } = useI18n();
 </script>
 
@@ -10,7 +17,7 @@ const { t } = useI18n();
   </h2>
   <v-row justify="center" class="mb-8">
     <v-col cols="12">
-      <v-card elevation="1" class="pa-4">
+      <v-card :class="['pa-4', highlight && 'highlight']">
         <v-card-text>
           <p class="mb-4">{{ t('about.description_p1') }}</p>
           <p class="mb-4">{{ t('about.description_p2') }}</p>

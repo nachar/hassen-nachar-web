@@ -10,6 +10,8 @@ import { useCustomKeys } from '@/composables/useCustomKeys.js';
 import { showMoreMessages } from '@/globals/showMoreMessages.js';
 import { formatResponse } from '@/globals/utils.js';
 
+const emit = defineEmits(['highlightSection']);
+
 const { askChatbot } = defineProps({
   askChatbot: {
     type: Boolean,
@@ -34,10 +36,10 @@ const messages = ref([{ type: 'answer', text: t('chat.welcome') }]);
 const questionRefs = ref([]);
 const selectedSection = ref();
 const sections = {
-  projects: '#projects',
-  jobs: '#jobs',
-  personal_information: '#about',
-  links: '#links',
+  projects: 'projects',
+  jobs: 'jobs',
+  personal_information: 'about',
+  links: 'links',
 };
 
 const setQuestionRef = (el) => {
@@ -151,7 +153,10 @@ watch(
                     variant="elevated"
                     color="primary"
                     class="mt-2"
-                    @click="goTo(selectedSection)"
+                    @click="
+                      goTo(`#${selectedSection}`);
+                      emit('highlightSection', selectedSection);
+                    "
                   >
                     {{ selectedMessages.button }}
                   </v-btn>

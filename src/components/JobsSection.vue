@@ -1,6 +1,13 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 
+defineProps({
+  highlight: {
+    type: Boolean,
+    default: false,
+  },
+});
+
 const { t } = useI18n();
 
 const jobsKeys = ['gft', 'modyo', 'techmobile', 'devlab'];
@@ -12,7 +19,7 @@ const jobsKeys = ['gft', 'modyo', 'techmobile', 'devlab'];
   </h2>
   <v-row class="mb-8">
     <v-col cols="12">
-      <v-card elevation="1" class="px-2 py-3">
+      <v-card :class="['px-2 py-3', highlight && 'highlight']">
         <v-card-text>
           <v-timeline density="compact" align="start">
             <v-timeline-item v-for="key in jobsKeys" :key="key" dot-color="primary" size="small">
