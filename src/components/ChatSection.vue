@@ -239,8 +239,6 @@ watch(
 </style>
 
 <style lang="scss">
-@use '@/styles/colors' as colors;
-
 .message-content {
   ul,
   ol {
