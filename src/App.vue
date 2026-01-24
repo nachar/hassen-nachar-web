@@ -5,7 +5,7 @@ import AboutSection from '@/components/AboutSection.vue';
 import AIChatbotPromotion from '@/components/AIChatbotPromotion.vue';
 import AppHeader from '@/components/AppHeader.vue';
 import AppsSection from '@/components/AppsSection.vue';
-import ChatContainer from '@/components/ChatContainer.vue';
+import ChatSection from '@/components/ChatSection.vue';
 import HeroSection from '@/components/HeroSection.vue';
 import JobsSection from '@/components/JobsSection.vue';
 import LinksSection from '@/components/LinksSection.vue';
@@ -34,7 +34,7 @@ const changeAskChatbot = () => {
           <LinksSection />
         </v-container>
       </v-main>
-      <ChatContainer :ask-chatbot="askChatbot" />
+      <ChatSection :ask-chatbot="askChatbot" />
     </v-layout>
   </v-app>
 </template>
