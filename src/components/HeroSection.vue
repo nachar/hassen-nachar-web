@@ -8,7 +8,7 @@ const { t } = useI18n();
   <v-row align="center" class="mb-16">
     <v-col cols="12" md="4" class="text-center">
       <v-avatar size="180">
-        <v-img src="/hassen.jpeg" />
+        <v-img src="https://nachar.github.io/hassen-nachar-web/hassen.jpeg" />
       </v-avatar>
     </v-col>
 

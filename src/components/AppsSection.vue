@@ -34,7 +34,7 @@ const { t } = useI18n();
           <v-avatar class="ma-3" rounded="0" size="125">
             <a href="https://apps.apple.com/app/id6757487162" target="_blank" rel="noopener">
               <v-img
-                src="/shopBuddyLogo.png"
+                src="https://nachar.github.io/hassen-nachar-web/shopBuddyLogo.png"
                 alt="Shop Buddy app preview"
                 max-width="200"
                 width="125"
