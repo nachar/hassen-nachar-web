@@ -9,7 +9,7 @@ const { t } = useI18n();
     {{ t('links.title') }}
   </h2>
 
-  <v-row class="d-flex justify-center">
+  <v-row>
     <v-col cols="12" md="3">
       <v-btn
         class="mr-4"
