@@ -1,3 +1,6 @@
+<!-- TODO: Me faltan las traducciones a otros idiomas-->
+<!-- TODO: Highlight section -->
+<!-- TODO: Revisar bien este chat porque lo hizo la IA xD-->
 <script setup>
 import { nextTick, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
@@ -7,6 +10,13 @@ import { useAsk } from '@/composables/api/useAsk.js';
 import { useCustomKeys } from '@/composables/useCustomKeys.js';
 import { showMoreMessages } from '@/globals/showMoreMessages.js';
 import { formatResponse } from '@/globals/utils.js';
+
+const { askChatbot } = defineProps({
+  askChatbot: {
+    type: Boolean,
+    required: true,
+  },
+});
 
 const { t } = useI18n();
 
@@ -75,6 +85,13 @@ watch(fetchAskError, (newError) => {
     fetchAskReset();
   }
 });
+
+watch(
+  () => askChatbot,
+  () => {
+    isChatOpen.value = true;
+  }
+);
 </script>
 
 <template>

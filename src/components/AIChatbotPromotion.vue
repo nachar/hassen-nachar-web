@@ -2,6 +2,8 @@
 import { useI18n } from 'vue-i18n';
 
 const { t } = useI18n();
+
+const emit = defineEmits(['askChatbot']);
 </script>
 
 <template>
@@ -22,7 +24,7 @@ const { t } = useI18n();
         </v-col>
 
         <v-col cols="12" md="3" class="text-center">
-          <v-btn color="primary" size="large">
+          <v-btn color="primary" size="large" @click="emit('askChatbot')">
             {{ t('chatbot.cta') }}
           </v-btn>
         </v-col>

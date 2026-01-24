@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue';
+
 import AboutSection from '@/components/AboutSection.vue';
 import AIChatbotPromotion from '@/components/AIChatbotPromotion.vue';
 import AppHeader from '@/components/AppHeader.vue';
@@ -8,6 +10,12 @@ import HeroSection from '@/components/HeroSection.vue';
 import JobsSection from '@/components/JobsSection.vue';
 import LinksSection from '@/components/LinksSection.vue';
 import ProjectsSection from '@/components/ProjectsSection.vue';
+
+const askChatbot = ref(false);
+
+const changeAskChatbot = () => {
+  askChatbot.value = !askChatbot.value;
+};
 </script>
 
 <template>
@@ -18,7 +26,7 @@ import ProjectsSection from '@/components/ProjectsSection.vue';
       <v-main>
         <v-container class="py-12">
           <HeroSection />
-          <AIChatbotPromotion />
+          <AIChatbotPromotion @ask-chatbot="changeAskChatbot" />
           <AboutSection />
           <JobsSection />
           <ProjectsSection />
@@ -26,7 +34,7 @@ import ProjectsSection from '@/components/ProjectsSection.vue';
           <LinksSection />
         </v-container>
       </v-main>
-      <ChatContainer />
+      <ChatContainer :ask-chatbot="askChatbot" />
     </v-layout>
   </v-app>
 </template>
