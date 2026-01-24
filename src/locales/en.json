@@ -1,0 +1,132 @@
+{
+  "header": {
+    "name": "Hassen Nachar",
+    "role": "senior frontend engineer"
+  },
+
+  "nav": {
+    "about": "about",
+    "experience": "experience",
+    "projects": "projects",
+    "apps": "apps",
+    "links": "links"
+  },
+
+  "hero": {
+    "title": "Hassen Nachar - Senior frontend engineer",
+    "subtitle": "Senior Frontend Engineer with 10+ years developing and architecting digital solutions for financial and retail sectors, specializing in banking platforms. Skilled in team mentoring, cloud architecture, and building scalable web/mobile apps, delivering agile solutions with best practices in performance, accessibility, and maintainability.",
+    "contact": "contact"
+  },
+
+  "chatbot": {
+    "title": "Ask my ai chatbot",
+    "description": "Ask anything about my experience, projects, skills or impact. the chatbot knows my professional background",
+    "cta": "ask the chatbot"
+  },
+
+  "about": {
+    "title": "About me",
+    "description_p1": "I build frontend solutions with a strong focus on clarity, performance, and long-term maintainability. Over the past 10+ years, I’ve worked on complex web and mobile applications, primarily in banking and enterprise environments, where scalability, accessibility, and code quality are critical from day one.",
+    "description_p2": "My experience spans modern frontend frameworks, hybrid mobile platforms, and design systems used at scale. I’ve collaborated closely with backend, UX, and architecture teams, helping translate complex business requirements into clean, reliable user interfaces that can evolve without friction.",
+    "description_p3": "Beyond development, I actively contribute through technical leadership and mentoring. I enjoy improving team standards, reviewing architectures, and ensuring that frontend decisions support both product goals and sustainable engineering practices.",
+    "chips": {
+      "core_1": "Frontend Architecture",
+      "core_2": "Banking Platforms",
+      "stack_1": "JavaScript / TypeScript",
+      "stack_2": "React",
+      "stack_3": "Vue",
+      "scope_1": "Web & Mobile",
+      "scope_2": "Cloud"
+    }
+  },
+
+  "experience": {
+    "title": "Professional Experience",
+    "jobs": {
+      "gft": {
+        "company": "GFT",
+        "job_title": "Frontend Engineer",
+        "period": "2023 - Today",
+        "description": "Led BBVA frontend initiatives across web and hybrid mobile platforms for five countries, working closely with architecture teams to improve public cloud governance, scalability, performance, and cost optimization. Delivered high-quality, maintainable solutions aligned with enterprise standards and agile practices."
+      },
+      "modyo": {
+        "company": "Modyo",
+        "job_title": "Frontend Engineer",
+        "period": "2016 - 2023",
+        "description": "Led frontend architecture and development at Modyo, delivering web and mobile solutions for major financial clients such as Santander, BCI Miami, PC Factory, and Cinemark across Latin America. Defined standards, unified architectures, mentored teams, and coordinated technology decisions to ensure scalable, maintainable platforms."
+      },
+      "techmobile": {
+        "company": "Techmobile (Suika)",
+        "job_title": "Android & Frontend Developer",
+        "period": "2014 - 2016",
+        "description": "Developed native Android and web applications as part of a small, versatile team, delivering scalable cross-platform solutions for clients such as Copec. Contributed to multiple projects using modern frontend frameworks, with a strong focus on performance, clean architecture, and maintainable codebases."
+      },
+      "devlab": {
+        "company": "DevLab",
+        "job_title": "API & Frontend Developer",
+        "period": "2013 - 2014",
+        "description": "Developed hybrid web applications for Android and iOS, built APIs for web and mobile platforms, and delivered partner websites. Contributed to mining industry projects integrating hardware and sensor data via APIs to automate environmental monitoring and control systems."
+      }
+    }
+  },
+
+  "projects": {
+    "title": "Projects",
+    "company": "Company",
+    "sector": "Sector",
+    "companies": {
+      "gft": "GFT",
+      "modyo": "Modyo",
+      "techmobile": "Techmobile (Suika)",
+      "devlab": "DevLab"
+    },
+    "sectors": {
+      "financial": "Financial",
+      "energy": "Energy",
+      "entertainment": "Entertainment",
+      "biotechnology": "Biotechnology",
+      "tourism": "Tourism",
+      "sports": "Sports",
+      "mining": "Mining",
+      "infrastructure": "Infrastructure"
+    },
+    "items": {
+      "bbva": "BBVA",
+      "finops_champions": "FinOps Champions",
+      "santander": "Santander",
+      "bci_miami_chile": "BCI Miami & Chile",
+      "copec": "Copec",
+      "pagoclick": "PagoClick",
+      "consorcio": "Consorcio",
+      "cinemark": "Cinemark",
+      "bioscell": "Bioscell",
+      "marina_golf_rapel": "Marina Golf Rapel",
+      "mundo_copec": "Mundo Copec",
+      "tribuna_centenario": "Tribuna Centenario",
+      "ims": "IMS",
+      "vias_chile": "Vías Chile"
+    }
+  },
+  "apps": {
+    "title": "Apps",
+    "shop_buddy": {
+      "title": "Shop Buddy",
+      "description": "A simple, fast and ad-free iPhone app to organize your shopping list. Keep everything in one place and make grocery shopping easier.",
+      "button": "Download on the App Store"
+    }
+  },
+
+  "links": {
+    "title": "Professional links",
+    "github": "github",
+    "linkedin": "linkedin"
+  },
+
+  "chat": {
+    "welcome": "Welcome to Hassen Nachar’s AI Assistant! I am an AI specialized in answering questions about Hassen Nachar’s professional CV. Ask me about his experience, skills, projects, or career background, and I’ll provide clear and structured answers.",
+    "error": "Something went wrong. Please try again.",
+    "title": "AI Assistant",
+    "thinking": "AI is thinking...",
+    "ask_me": "Ask me something..."
+  }
+}

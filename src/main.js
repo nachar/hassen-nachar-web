@@ -1,10 +1,14 @@
-import 'vuetify/styles';
+import '@/styles/main.scss';
 import '@mdi/font/css/materialdesignicons.css';
 
 import { createApp } from 'vue';
 
-import vuetify from '@/plugins/vuetify';
+import { registerPlugins } from '@/plugins/index.js';
 
 import App from './App.vue';
 
-createApp(App).use(vuetify).mount('#app');
+const app = createApp(App);
+
+registerPlugins(app);
+
+app.mount('#app');

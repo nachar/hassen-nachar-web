@@ -1,0 +1,125 @@
+{
+  "header": {
+    "name": "Hassen Nachar",
+    "role": "senior frontend engineer"
+  },
+  "nav": {
+    "about": "sobre mí",
+    "experience": "experiencia",
+    "projects": "proyectos",
+    "apps": "apps",
+    "links": "enlaces"
+  },
+  "hero": {
+    "title": "Hassen Nachar - Senior frontend engineer",
+    "subtitle": "Senior Frontend Engineer con más de 10 años desarrollando y arquitectando soluciones digitales para los sectores financiero y retail, especializándose en plataformas bancarias. Experto en mentoría de equipos, arquitectura cloud y construcción de aplicaciones web/móviles escalables, entregando soluciones ágiles con las mejores prácticas en rendimiento, accesibilidad y mantenibilidad.",
+    "contact": "contacto"
+  },
+  "chatbot": {
+    "title": "Pregunta a mi chatbot de IA",
+    "description": "Pregunta cualquier cosa sobre mi experiencia, proyectos, habilidades o impacto. El chatbot conoce mi trayectoria profesional",
+    "cta": "preguntar al chatbot"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description_p1": "Construyo soluciones frontend con un fuerte enfoque en la claridad, el rendimiento y la mantenibilidad a largo plazo. Durante los últimos 10+ años, he trabajado en aplicaciones web y móviles complejas, principalmente en entornos bancarios y corporativos, donde la escalabilidad, la accesibilidad y la calidad del código son críticas desde el primer día.",
+    "description_p2": "Mi experiencia abarca frameworks modernos de frontend, plataformas móviles híbridas y sistemas de diseño utilizados a gran escala. He colaborado estrechamente con equipos de backend, UX y arquitectura, ayudando a traducir requisitos de negocio complejos en interfaces de usuario limpias y fiables que pueden evolucionar sin fricciones.",
+    "description_p3": "Más allá del desarrollo, contribuyo activamente a través del liderazgo técnico y la mentoría. Disfruto mejorando los estándares de los equipos, revisando arquitecturas y asegurando que las decisiones de frontend respalden tanto los objetivos del producto como las prácticas de ingeniería sostenibles.",
+    "chips": {
+      "core_1": "Arquitectura Frontend",
+      "core_2": "Plataformas Bancarias",
+      "stack_1": "JavaScript / TypeScript",
+      "stack_2": "React",
+      "stack_3": "Vue",
+      "scope_1": "Web & Mobile",
+      "scope_2": "Cloud"
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "jobs": {
+      "gft": {
+        "company": "GFT",
+        "job_title": "Frontend Engineer",
+        "period": "2023 - Actualidad",
+        "description": "Lideré iniciativas frontend de BBVA en plataformas web y móviles híbridas para cinco países, trabajando estrechamente con equipos de arquitectura para mejorar la gobernanza en la nube pública, la escalabilidad, el rendimiento y la optimización de costes. Entregué soluciones de alta calidad y mantenibles alineadas con los estándares corporativos y prácticas ágiles."
+      },
+      "modyo": {
+        "company": "Modyo",
+        "job_title": "Frontend Engineer",
+        "period": "2016 - 2023",
+        "description": "Lideré la arquitectura y el desarrollo frontend en Modyo, entregando soluciones web y móviles para importantes clientes financieros como Santander, BCI Miami, PC Factory y Cinemark en toda Latinoamérica. Definí estándares, unifiqué arquitecturas, realicé mentoría a equipos y coordiné decisiones tecnológicas para asegurar plataformas escalables y mantenibles."
+      },
+      "techmobile": {
+        "company": "Techmobile (Suika)",
+        "job_title": "Android & Frontend Developer",
+        "period": "2014 - 2016",
+        "description": "Desarrollé aplicaciones nativas Android y web como parte de un equipo pequeño y versátil, entregando soluciones multiplataforma escalables para clientes como Copec. Contribuí en múltiples proyectos utilizando frameworks modernos de frontend, con un fuerte enfoque en el rendimiento, arquitectura limpia y bases de código mantenibles."
+      },
+      "devlab": {
+        "company": "DevLab",
+        "job_title": "API & Frontend Developer",
+        "period": "2013 - 2014",
+        "description": "Desarrollé aplicaciones web híbridas para Android e iOS, construí APIs para plataformas web y móviles, y entregué sitios web para socios. Contribuí en proyectos de la industria minera integrando hardware y datos de sensores a través de APIs para automatizar sistemas de control y monitoreo ambiental."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "company": "Empresa",
+    "sector": "Sector",
+    "companies": {
+      "gft": "GFT",
+      "modyo": "Modyo",
+      "techmobile": "Techmobile (Suika)",
+      "devlab": "DevLab"
+    },
+    "sectors": {
+      "financial": "Financiero",
+      "energy": "Energía",
+      "entertainment": "Entretenimiento",
+      "biotechnology": "Biotecnología",
+      "tourism": "Turismo",
+      "sports": "Deportes",
+      "mining": "Minería",
+      "infrastructure": "Infraestructura"
+    },
+    "items": {
+      "bbva": "BBVA",
+      "finops_champions": "FinOps Champions",
+      "santander": "Santander",
+      "bci_miami_chile": "BCI Miami & Chile",
+      "copec": "Copec",
+      "pagoclick": "PagoClick",
+      "consorcio": "Consorcio",
+      "cinemark": "Cinemark",
+      "bioscell": "Bioscell",
+      "marina_golf_rapel": "Marina Golf Rapel",
+      "mundo_copec": "Mundo Copec",
+      "tribuna_centenario": "Tribuna Centenario",
+      "ims": "IMS",
+      "vias_chile": "Vías Chile"
+    }
+  },
+  "apps": {
+    "title": "Apps",
+    "shop_buddy": {
+      "title": "Shop Buddy",
+      "description": "Una aplicación para iPhone simple, rápida y sin anuncios para organizar tu lista de la compra. Mantén todo en un solo lugar y facilita tus compras de supermercado.",
+      "button": "Descargar en el App Store"
+    }
+  },
+  "links": {
+    "title": "Enlaces profesionales",
+    "github": "github",
+    "linkedin": "linkedin"
+  },
+
+  "chat": {
+    "welcome": "¡Bienvenido al Asistente de IA de Hassen Nachar! Soy una IA especializada en responder preguntas sobre el CV profesional de Hassen Nachar. Pregúntame sobre su experiencia, habilidades, proyectos o trayectoria profesional, y te proporcionaré respuestas claras y estructuradas.",
+    "error": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "title": "Asistente IA",
+    "thinking": "La IA está pensando...",
+    "ask_me": "Pregúntame algo..."
+  }
+}

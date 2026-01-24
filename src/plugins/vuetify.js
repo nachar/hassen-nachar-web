@@ -1,3 +1,5 @@
+import 'vuetify/styles';
+
 import { createVuetify } from 'vuetify';
 import * as components from 'vuetify/components';
 import * as directives from 'vuetify/directives';
@@ -5,24 +7,29 @@ import * as directives from 'vuetify/directives';
 const hassenNacharWeb = {
   dark: false,
   colors: {
-    background: '#FAFAFA',
+    // Base
+    background: '#F8FAFC',
     surface: '#FFFFFF',
-    'surface-light': '#F5F5F5',
-    'surface-variant': '#E0E0E0',
+    'surface-light': '#F1F5F9',
+    'surface-variant': '#E2E8F0',
 
-    primary: '#556b63',
-    'primary-darken-1': '#3b4c46',
-    secondary: '#8d9c9b',
-    'secondary-darken-1': '#6e7a79',
+    // Brand
+    primary: '#2563EB',
+    'primary-darken-1': '#1E40AF',
 
-    error: '#FF806D',
-    info: '#8BADC6',
-    success: '#81C784',
-    warning: '#FFCD82',
+    secondary: '#64748B',
+    'secondary-darken-1': '#475569',
 
-    'gray-light': '#BDBDBD',
-    'gray-medium': '#9E9E9E',
-    'gray-dark': '#424242',
+    // States
+    error: '#EF4444',
+    info: '#38BDF8',
+    success: '#22C55E',
+    warning: '#F59E0B',
+
+    // Neutrals
+    'gray-light': '#CBD5E1',
+    'gray-medium': '#94A3B8',
+    'gray-dark': '#1E293B',
   },
 };
 

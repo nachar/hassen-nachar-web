@@ -1,54 +1,57 @@
 <script setup>
-import { ref } from 'vue';
+import { reactive, ref } from 'vue';
 
-import ChatComponent from '@/components/ChatComponent.vue';
-import DialogComponent from '@/components/DialogComponent.vue';
-import PresentationComponent from '@/components/PresentationComponent.vue';
+import AboutSection from '@/components/AboutSection.vue';
+import AIChatbotPromotion from '@/components/AIChatbotPromotion.vue';
+import AppHeader from '@/components/AppHeader.vue';
+import AppsSection from '@/components/AppsSection.vue';
+import ChatSection from '@/components/ChatSection.vue';
+import HeroSection from '@/components/HeroSection.vue';
+import JobsSection from '@/components/JobsSection.vue';
+import LinksSection from '@/components/LinksSection.vue';
+import ProjectsSection from '@/components/ProjectsSection.vue';
 
-const dialog = ref(false);
+const askChatbot = ref(false);
+
+const changeAskChatbot = () => {
+  askChatbot.value = !askChatbot.value;
+};
+
+const highlightSections = reactive({
+  projects: false,
+  jobs: false,
+  about: false,
+  links: false,
+});
+
+const highlightSection = (section) => {
+  highlightSections[section] = true;
+
+  setTimeout(() => {
+    highlightSections[section] = false;
+  }, 2500);
+};
 </script>
 
 <template>
   <v-app>
-    <div class="layout d-flex flex-column flex-md-row">
-      <div class="layout__presentation">
-        <PresentationComponent />
-      </div>
-      <div class="layout__chat">
-        <ChatComponent @open-modal="() => (dialog = true)" />
-      </div>
-    </div>
-    <DialogComponent v-model="dialog" @close-modal="() => (dialog = false)" />
+    <v-layout>
+      <AppHeader />
+
+      <v-main>
+        <v-container class="py-12">
+          <HeroSection />
+          <AIChatbotPromotion @ask-chatbot="changeAskChatbot" />
+          <AboutSection :highlight="highlightSections.about" />
+          <JobsSection :highlight="highlightSections.jobs" />
+          <ProjectsSection :highlight="highlightSections.projects" />
+          <AppsSection />
+          <LinksSection :highlight="highlightSections.links" />
+        </v-container>
+      </v-main>
+      <ChatSection :ask-chatbot="askChatbot" @highlight-section="highlightSection" />
+    </v-layout>
   </v-app>
 </template>
 
-<style scoped lang="scss">
-@use '@/styles/colors' as colors;
-
-$presentation-height: 85px;
-$left-element-width: 35%;
-
-.layout {
-  &__presentation {
-    height: $presentation-height;
-    width: 100%;
-    background-color: colors.$primary;
-    color: colors.$surface;
-
-    @media (min-width: 960px) {
-      width: $left-element-width;
-      height: 100dvh;
-    }
-  }
-
-  &__chat {
-    height: calc(100dvh - $presentation-height);
-    width: 100%;
-
-    @media (min-width: 960px) {
-      width: calc(100% - $left-element-width);
-      height: 100dvh;
-    }
-  }
-}
-</style>
+<style scoped lang="scss"></style>
